@@ -1,4 +1,5 @@
 package com.course.model;
 
-public class InterfaceName {
+public enum  InterfaceName {
+   GETUSERLIST,GETUSERINFO,LOGIN,UPDATEUSERINFO,ADDUSER
 }

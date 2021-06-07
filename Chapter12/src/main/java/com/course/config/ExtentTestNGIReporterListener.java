@@ -1,4 +1,4 @@
-package com.tester.dome;
+package com.course.config;
 
 
 import com.aventstack.extentreports.ExtentReports;
