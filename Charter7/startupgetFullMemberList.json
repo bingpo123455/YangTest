@@ -1,0 +1,67 @@
+[
+  {
+    "description": "这是一个无参数的Get请求",
+    "request": {
+      "uri": "/getDemo",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "这是一个无参数的get请求！！！"
+    }
+  },
+  
+  {
+    "description": "这个是带参的get请求",
+    "request": {
+      "uri": "/young/v2/user/vip/vipmember/fullmemberlist",
+      "method": "get",
+      "queries": {
+        "username": "18801224405",
+        "password": "qqq222"
+      }
+    },
+  "response": {
+    "headers": {
+      "Content-Type":"text/html;charset=gbk"
+    },
+	"json":{
+	"data":[
+    {
+      "vmid": 1,
+      "title": "1个月会员",
+      "period": 1,
+      "periodtype": 2,
+      "type": 2,
+      "originalprice": 3000,
+      "discountprice": 3000,
+      "autorenewflag": false,
+      "newuserflag": true,
+      "newuserprice": 1,
+      "newusertip": "首月特惠6元",
+      "newusersettlementtag": "首月特惠"
+    },
+    {
+      "vmid": 4,
+      "title": "3个月",
+      "period": 3,
+      "periodtype": 2,
+      "type": 2,
+      "originalprice": 50,
+      "discountprice": 2,
+      "autorenewflag": false,
+      "newuserflag": false,
+      "newuserprice": 0,
+      "newusertip": "",
+      "newusersettlementtag": "",
+    }
+  ],
+	"status": 0,
+	"msg": "查询成功!"
+	
+  }
+  }
+}
+]
