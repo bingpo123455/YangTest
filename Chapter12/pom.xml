@@ -10,34 +10,34 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>Chapter12</artifactId>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
+     <!-- <build>
+           <plugins>
+               <plugin>
+                   <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-compiler-plugin</artifactId>
+                   <configuration>
+                       <source>1.6</source>
+                       <target>1.6</target>
+                   </configuration>
+               </plugin>
 
 
-            <!--testng打jar包运行的插件引入-->
-            <!--命令：mvn clean package-->
-        </plugins>
-    </build>
-   <!-- <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>-->
+               &lt;!&ndash;testng打jar包运行的插件引入&ndash;&gt;
+            &lt;!&ndash;命令：mvn clean package&ndash;&gt;
+        </plugins>-->
+        <!--  </build>
+         <build>
+             <plugins>
+                 <plugin>
+                     <groupId>org.apache.maven.plugins</groupId>
+                     <artifactId>maven-compiler-plugin</artifactId>
+                     <configuration>
+                         <source>7</source>
+                         <target>7</target>
+                     </configuration>
+                 </plugin>
+             </plugins>
+         </build>-->
     <dependencies>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -91,8 +91,9 @@
             <version>1.2</version>
         </dependency>
     </dependencies>
-   <!-- <build>
+   <build>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -100,14 +101,22 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            ./src/main/resourecs/testng.xml
+                            ./src/main/resources/testng.xml
                         </suiteXmlFile>
-
                     </suiteXmlFiles>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
+            <!--<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.6</source>
+                <target>1.6</target>
+            </configuration>
+            </plugin>-->
         </plugins>
-    </build>-->
+    </build>
 
 
 </project>
